@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Htime"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "HelloWorld1",
+      "value": "Hello World"
+    },
+    {
+      "name": "login_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "HelloWorld2",
+      "value": "Hello World"
+    },
+    {
+      "name": "login_description1",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "HelloWorld3",
+      "value": "Hello World"
+    },
+    {
+      "name": "htimeutiability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "HelloWorld4",
+      "value": "Hello World"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+    <!--
+    登录页面
+    -->
+    <Text
+        ohos:top_margin="40vp"
+        ohos:left_padding="25vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="云上协同"
+        ohos:text_size="30fp"
+        ohos:text_color="#000"
+        />
+    <TextField
+        ohos:id="$+id:filed_email"
+        ohos:top_margin="50vp"
+        ohos:width="match_parent"
+        ohos:right_padding="25vp"
+        ohos:left_padding="25vp"
+        ohos:min_height="45vp"
+        ohos:height="match_content"
+        ohos:basement="$graphic:background_ability_login"
+        ohos:multiple_lines="false"
+        ohos:background_element="#ffffff"
+        ohos:layout_alignment="horizontal_center"
+        ohos:hint="enter your email or phone number"
+        ohos:text_size="18fp"
+        />
+    <TextField
+        ohos:id="$+id:filed_pwd"
+        ohos:top_margin="40vp"
+        ohos:width="match_parent"
+        ohos:right_padding="25vp"
+        ohos:left_padding="25vp"
+        ohos:min_height="45vp"
+        ohos:height="match_content"
+        ohos:basement="$graphic:background_ability_login"
+        ohos:multiple_lines="false"
+        ohos:background_element="#ffffff"
+        ohos:layout_alignment="horizontal_center"
+        ohos:hint="enter your password"
+        ohos:text_size="18fp"
+        />
+    <Button
+        ohos:id="$+id:button_login"
+        ohos:height="match_content"
+        ohos:top_margin="50vp"
+        ohos:top_padding="5vp"
+        ohos:bottom_padding="5vp"
+        ohos:width="230vp"
+        ohos:text="登录"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:text_size="22fp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text_color="#ffffff"
+        />
+
+</DirectionalLayout>
