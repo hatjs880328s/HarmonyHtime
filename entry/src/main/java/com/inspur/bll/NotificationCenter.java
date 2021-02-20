@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.HashMap;
 
+/// 通知中心
 public class NotificationCenter {
 
     private static NotificationCenter instance;
