@@ -50,6 +50,7 @@
           }
         ],
         "orientation": "unspecified",
+        "visible": true,
         "name": "com.inspur.htime.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
@@ -87,9 +88,18 @@
       },
       {
         "orientation": "unspecified",
-        "name": "com.inspur.htimeuti.htimeutiability",
+        "name": "com.inspur.roottabbar.Roottabbar",
         "icon": "$media:icon",
-        "description": "$string:htimeutiability_description",
+        "description": "$string:roottabbar_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.inspur.roottabbar.IHTTabbarContanct",
+        "icon": "$media:icon",
+        "description": "$string:ihttabbarcontanct_description",
         "label": "entry",
         "type": "page",
         "launchType": "standard"

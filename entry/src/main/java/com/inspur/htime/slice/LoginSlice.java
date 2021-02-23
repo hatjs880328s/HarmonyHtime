@@ -4,6 +4,7 @@ import com.inspur.bll.NotificationCenter;
 import com.inspur.htime.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
+import ohos.aafwk.content.Operation;
 import ohos.agp.components.Button;
 import ohos.agp.components.Component;
 import ohos.agp.components.Text;
@@ -49,6 +50,15 @@ public class LoginSlice extends AbilitySlice {
                 infos.put("123", 321);
                 NotificationCenter.getInstance().postNotification("noti_name_one", infos);
 
+                // page jump
+                Intent intent = new Intent();
+                Operation oper = new Intent.OperationBuilder()
+                        .withDeviceId("")
+                        .withBundleName("com.inspur.htime")
+                        .withAbilityName("com.inspur.roottabbar.Roottabbar")
+                        .build();
+                intent.setOperation(oper);
+                startAbility(intent);
             }
         });
     }

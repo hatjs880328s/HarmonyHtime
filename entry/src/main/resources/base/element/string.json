@@ -35,6 +35,22 @@
     {
       "name": "HelloWorld4",
       "value": "Hello World"
+    },
+    {
+      "name": "roottabbar_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "ihttabbarcontanct_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

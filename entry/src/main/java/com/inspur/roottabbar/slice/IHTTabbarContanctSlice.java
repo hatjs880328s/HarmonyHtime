@@ -1,14 +1,14 @@
-package com.inspur.htimeuti.slice;
+package com.inspur.roottabbar.slice;
 
 import com.inspur.htime.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 
-public class htimeutiabilitySlice extends AbilitySlice {
+public class IHTTabbarContanctSlice extends AbilitySlice {
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
-        super.setUIContent(ResourceTable.Layout_ability_htimeutiability);
+        super.setUIContent(ResourceTable.Layout_ability_ihttabbar_contanct);
     }
 
     @Override
