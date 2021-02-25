@@ -1,7 +1,14 @@
-package com.inspur.common;
+package com.inspur.uti;
 
-import com.inspur.common.uti.TextUtils;
-import ohos.agp.components.*;
+import com.inspur.htime.ResourceTable;
+
+import ohos.agp.components.AttrSet;
+import ohos.agp.components.Component;
+import ohos.agp.components.ComponentContainer;
+import ohos.agp.components.DependentLayout;
+import ohos.agp.components.Image;
+import ohos.agp.components.LayoutScatter;
+import ohos.agp.components.Text;
 import ohos.agp.utils.Color;
 import ohos.app.Context;
 
@@ -24,7 +31,7 @@ public class Tabbar extends DependentLayout implements ITabbar<TabbarItemInfo<?>
 
     public Tabbar(Context context, AttrSet attrSet, String styleName) {
         super(context, attrSet, styleName);
-        Component component = LayoutScatter.getInstance(context).parse(ResourceTable.Layout_tabbar_item_info, this, true);
+        Component component = LayoutScatter.getInstance(context).parse(ResourceTable.Layout_bar_bottom, this, true);
         mTabImage = (Image) component.findComponentById(ResourceTable.Id_image);
         mTabName = (Text) component.findComponentById(ResourceTable.Id_name);
         mTabImage.setScaleMode(Image.ScaleMode.INSIDE);
@@ -50,27 +57,34 @@ public class Tabbar extends DependentLayout implements ITabbar<TabbarItemInfo<?>
     private void inflateInfo(boolean selected, boolean init) {
         if (tabInfo.tabType == TabbarItemInfo.BarType.IMAGE_TEXT) {
             if (init) {
+                // 图片和名称都可见
                 mTabName.setVisibility(VISIBLE);
                 mTabImage.setVisibility(VISIBLE);
                 if (!TextUtils.isEmpty(tabInfo.name)) {
+                    // 设置条目的名称
                     mTabName.setText(tabInfo.name);
                 }
             }
             if (selected) {
+                // 显示选中的图片
                 mTabImage.setPixelMap(tabInfo.selectedImage);
                 mTabName.setTextColor(new Color(parseColor(tabInfo.tintColor)));
             } else {
+                // 显示未选中的图片
                 mTabImage.setPixelMap(tabInfo.defaultImage);
                 mTabName.setTextColor(new Color(parseColor(tabInfo.defaultColor)));
             }
         } else if (tabInfo.tabType == TabbarItemInfo.BarType.IMAGE) {
             if (init) {
+                // 仅仅显示图片，将名称隐藏
                 mTabName.setVisibility(HIDE);
                 mTabImage.setVisibility(VISIBLE);
             }
             if (selected) {
+                // 显示选中的图片
                 mTabImage.setPixelMap(tabInfo.selectedImage);
             } else {
+                // 显示未选中的图片
                 mTabImage.setPixelMap(tabInfo.defaultImage);
             }
         }
@@ -107,10 +121,11 @@ public class Tabbar extends DependentLayout implements ITabbar<TabbarItemInfo<?>
     @Override
     public void onBarSelectedChange(int index, TabbarItemInfo<?> preInfo, TabbarItemInfo<?> nextInfo) {
         if (nextInfo.tabType == TabbarItemInfo.BarType.IMAGE) {
+            // 当前条目的类型是IMAGE类型，则不做任何处理
             return;
         }
         if (preInfo == nextInfo) {
-            // 假设当前选中的是tab1，同时点击的也是tab1，那就不需要做任何操作了
+            // 假设当前选中的是条目1，同时点击的也是条目1，那就不需要做任何操作了
             return;
         }
         if (preInfo != tabInfo && nextInfo != tabInfo) {

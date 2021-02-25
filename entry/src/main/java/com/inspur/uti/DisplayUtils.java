@@ -1,4 +1,4 @@
-package com.inspur.common.uti;
+package com.inspur.uti;
 
 import ohos.agp.utils.Point;
 import ohos.agp.window.service.Display;

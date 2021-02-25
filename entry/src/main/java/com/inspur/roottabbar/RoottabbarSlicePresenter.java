@@ -1,9 +1,8 @@
 package com.inspur.roottabbar;
 
 
-import com.inspur.common.BottomTabbar;
-import com.inspur.common.TabbarItemInfo;
-import com.inspur.common.uti.Toast;
+import com.inspur.uti.BottomTabbar;
+import com.inspur.uti.TabbarItemInfo;
 import com.inspur.htime.ResourceTable;
 import com.inspur.provider.AbilitySliceProvider;
 import ohos.app.Context;
@@ -37,30 +36,29 @@ public class RoottabbarSlicePresenter {
         String timeline = mAbilitySliceProvider.getString(ResourceTable.String_tabbar_timeline);
 
         // 首页
-        int xx = ResourceTable.Media_icon;
         TabbarItemInfo<Integer> honeInfo = new TabbarItemInfo<>(home,
-                ResourceTable.Media_icon,
-                ResourceTable.Media_icon,
+                ResourceTable.Media_home_normal,
+                ResourceTable.Media_home_selected,
                 defaultColor, tintColor);
-        // 通讯录
+        // 收藏
         TabbarItemInfo<Integer> favoriteInfo = new TabbarItemInfo<>(contacts,
-                ResourceTable.Media_icon,
-                ResourceTable.Media_icon,
+                ResourceTable.Media_favorite_normal,
+                ResourceTable.Media_favorite_selected,
                 defaultColor, tintColor);
-        // 时间轴
+        // 分类
         TabbarItemInfo<Integer> categoryInfo = new TabbarItemInfo<>(timeline,
-                ResourceTable.Media_icon,
-                ResourceTable.Media_icon,
+                ResourceTable.Media_category_normal,
+                ResourceTable.Media_category_selected,
                 defaultColor, tintColor);
-        // 应用
+        // 推荐
         TabbarItemInfo<Integer> recommendInfo = new TabbarItemInfo<>(application,
-                ResourceTable.Media_icon,
-                ResourceTable.Media_icon,
+                ResourceTable.Media_recommend_normal,
+                ResourceTable.Media_recommend_selected,
                 defaultColor, tintColor);
         // 我的
         TabbarItemInfo<Integer> profileInfo = new TabbarItemInfo<>(mine,
-                ResourceTable.Media_icon,
-                ResourceTable.Media_icon,
+                ResourceTable.Media_profile_normal,
+                ResourceTable.Media_profile_selected,
                 defaultColor, tintColor);
         // 将每个条目的数据放入到集合
         infoList.add(honeInfo);

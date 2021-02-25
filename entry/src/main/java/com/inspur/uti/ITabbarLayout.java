@@ -1,4 +1,4 @@
-package com.inspur.common;
+package com.inspur.uti;
 
 import ohos.agp.components.ComponentContainer;
 

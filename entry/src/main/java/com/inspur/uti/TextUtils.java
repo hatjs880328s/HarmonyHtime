@@ -1,4 +1,4 @@
-package com.inspur.common.uti;
+package com.inspur.uti;
 
 public class TextUtils {
 

@@ -1,6 +1,6 @@
-package com.inspur.common.uti;
+package com.inspur.uti;
 
-import com.inspur.common.ResourceTable;
+import com.inspur.htime.ResourceTable;
 import ohos.agp.components.DirectionalLayout;
 import ohos.agp.components.LayoutScatter;
 import ohos.agp.components.Text;

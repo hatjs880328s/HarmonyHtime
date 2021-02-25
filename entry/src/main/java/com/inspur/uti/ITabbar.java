@@ -1,4 +1,4 @@
-package com.inspur.common;
+package com.inspur.uti;
 
 public interface ITabbar<D> extends ITabbarLayout.OnBarSelectedListener<D> {
 

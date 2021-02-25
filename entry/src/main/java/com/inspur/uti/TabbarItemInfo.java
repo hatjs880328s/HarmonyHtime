@@ -1,4 +1,4 @@
-package com.inspur.common;
+package com.inspur.uti;
 
 public class TabbarItemInfo<Color> {
 

@@ -1,11 +1,7 @@
-package com.inspur.common;
+package com.inspur.uti;
 
-import com.inspur.common.uti.DisplayUtils;
 import ohos.agp.colors.RgbColor;
-import ohos.agp.components.AttrSet;
-import ohos.agp.components.Component;
-import ohos.agp.components.ComponentContainer;
-import ohos.agp.components.StackLayout;
+import ohos.agp.components.*;
 import ohos.agp.components.element.ShapeElement;
 import ohos.agp.utils.LayoutAlignment;
 import ohos.app.Context;
@@ -143,19 +139,27 @@ public class BottomTabbar extends StackLayout implements ITabbarLayout<Tabbar, T
      * 添加条目
      */
     private void addBottomBar() {
+        // 每个条目的宽度就是屏幕宽度除以条目的总个数
         int width = DisplayUtils.getDisplayWidthInPx(getContext()) / infoList.size();
+        // 高度是固定的值，这里需要做屏幕适配，将vp转换成像素
         int height = DisplayUtils.vp2px(getContext(), barBottomHeight);
         StackLayout stackLayout = new StackLayout(getContext());
         stackLayout.setId(ID_TAB_BOTTOM);
         for (int i = 0; i < infoList.size(); i++) {
             TabbarItemInfo<?> info = infoList.get(i);
+            // 创建布局配置对象
             LayoutConfig config = new LayoutConfig(width, height);
+            // 设置底部对齐
             config.alignment = LayoutAlignment.BOTTOM;
+            // 设置左边距
             config.setMarginLeft(i * width);
             Tabbar bottomBar = new Tabbar(getContext());
             tabSelectedListeners.add(bottomBar);
+            // 初始化每个条目
             bottomBar.setBarInfo(info);
+            // 添加条目
             stackLayout.addComponent(bottomBar, config);
+            // 设置点击事件
             bottomBar.setClickedListener(component -> onSelected(info));
         }
         LayoutConfig layoutConfig = new LayoutConfig(ComponentContainer.LayoutConfig.MATCH_PARENT,
@@ -164,6 +168,11 @@ public class BottomTabbar extends StackLayout implements ITabbarLayout<Tabbar, T
         addComponent(stackLayout, layoutConfig);
     }
 
+    /**
+     * 点击条目后给外界回调
+     *
+     * @param nextInfo 点击后需要选中的条目
+     */
     private void onSelected(TabbarItemInfo<?> nextInfo) {
         for (OnBarSelectedListener<TabbarItemInfo<?>> listener : tabSelectedListeners) {
             listener.onBarSelectedChange(infoList.indexOf(nextInfo), selectedInfo, nextInfo);
