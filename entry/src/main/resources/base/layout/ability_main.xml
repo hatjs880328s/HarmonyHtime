@@ -11,7 +11,7 @@
         ohos:width="match_content"
         ohos:background_element="$graphic:background_ability_main"
         ohos:layout_alignment="horizontal_center"
-        ohos:text="loading..."
+        ohos:text="how solve it?"
         ohos:multiple_lines="true"
         ohos:text_size="50"
         />

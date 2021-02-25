@@ -1,0 +1,12 @@
+{
+  "color":[
+    {
+      "name":"default_color",
+      "value":"#ff656667"
+    },
+    {
+      "name":"tint_color",
+      "value":"#ffd44949"
+    }
+  ]
+}

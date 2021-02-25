@@ -1,5 +1,6 @@
 package com.inspur.roottabbar;
 
+import com.inspur.provider.AbilitySliceProvider;
 import com.inspur.roottabbar.slice.RoottabbarSlice;
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.content.Intent;

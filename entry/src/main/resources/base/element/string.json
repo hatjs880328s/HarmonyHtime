@@ -5,52 +5,24 @@
       "value": "Htime"
     },
     {
-      "name": "mainability_description",
-      "value": "Java_Phone_Empty Feature Ability"
+      "name": "tabbar_home",
+      "value": "沟通"
     },
     {
-      "name": "HelloWorld1",
-      "value": "Hello World"
+      "name": "tabbar_contacts",
+      "value": "通讯录"
     },
     {
-      "name": "login_description",
-      "value": "Java_Phone_Empty Feature Ability"
+      "name": "tabbar_timeline",
+      "value": "时间轴"
     },
     {
-      "name": "HelloWorld2",
-      "value": "Hello World"
+      "name": "tabbar_application",
+      "value": "应用"
     },
     {
-      "name": "login_description1",
-      "value": "Java_Phone_Empty Feature Ability"
-    },
-    {
-      "name": "HelloWorld3",
-      "value": "Hello World"
-    },
-    {
-      "name": "htimeutiability_description",
-      "value": "Java_Phone_Empty Feature Ability"
-    },
-    {
-      "name": "HelloWorld4",
-      "value": "Hello World"
-    },
-    {
-      "name": "roottabbar_description",
-      "value": "Java_Phone_Empty Feature Ability"
-    },
-    {
-      "name": "HelloWorld",
-      "value": "Hello World"
-    },
-    {
-      "name": "ihttabbarcontanct_description",
-      "value": "Java_Phone_Empty Feature Ability"
-    },
-    {
-      "name": "HelloWorld",
-      "value": "Hello World"
+      "name": "tabbar_mine",
+      "value": "我的"
     }
   ]
 }

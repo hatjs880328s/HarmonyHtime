@@ -14,6 +14,15 @@
   },
   "deviceConfig": {},
   "module": {
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.NoTitleBar",
+          "extra": ""
+        }
+      ]
+    },
     "reqPermissions": [
       {
         "name": "ohos.permission.INTERNET",
@@ -53,7 +62,7 @@
         "visible": true,
         "name": "com.inspur.htime.MainAbility",
         "icon": "$media:icon",
-        "description": "$string:mainability_description",
+        "description": "page",
         "label": "Htime",
         "type": "page",
         "launchType": "standard"
@@ -72,7 +81,7 @@
         "orientation": "unspecified",
         "name": "com.inspur.htime.Login",
         "icon": "$media:icon",
-        "description": "$string:login_description",
+        "description": "page",
         "label": "entry",
         "type": "page",
         "launchType": "standard"
@@ -81,7 +90,7 @@
         "orientation": "unspecified",
         "name": "com.inspur.htime.Login",
         "icon": "$media:icon",
-        "description": "$string:login_description",
+        "description": "loginpage",
         "label": "entry",
         "type": "page",
         "launchType": "standard"
@@ -90,16 +99,7 @@
         "orientation": "unspecified",
         "name": "com.inspur.roottabbar.Roottabbar",
         "icon": "$media:icon",
-        "description": "$string:roottabbar_description",
-        "label": "entry",
-        "type": "page",
-        "launchType": "standard"
-      },
-      {
-        "orientation": "unspecified",
-        "name": "com.inspur.roottabbar.IHTTabbarContanct",
-        "icon": "$media:icon",
-        "description": "$string:ihttabbarcontanct_description",
+        "description": "tabbarpage",
         "label": "entry",
         "type": "page",
         "launchType": "standard"

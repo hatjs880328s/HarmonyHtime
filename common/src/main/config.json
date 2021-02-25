@@ -1,0 +1,27 @@
+{
+  "app": {
+    "bundleName": "com.inspur.htime",
+    "vendor": "inspur",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 4,
+      "releaseType": "Beta2"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.inspur.common",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "common",
+      "moduleType": "har"
+    }
+  }
+}
