@@ -1,4 +1,4 @@
-package com.inspur.roottabbar;
+package com.inspur.provider;
 
 
 import com.inspur.uti.BottomTabbar;

@@ -2,12 +2,9 @@ package com.inspur.roottabbar.slice;
 
 import com.inspur.htime.ResourceTable;
 import com.inspur.provider.AbilitySliceProvider;
-import com.inspur.roottabbar.Roottabbar;
-import com.inspur.roottabbar.RoottabbarSlicePresenter;
+import com.inspur.provider.RoottabbarSlicePresenter;
 import ohos.aafwk.ability.AbilitySlice;
-import ohos.aafwk.ability.fraction.Fraction;
 import ohos.aafwk.content.Intent;
-import ohos.agp.components.TabList;
 
 public class RoottabbarSlice extends AbilitySlice implements AbilitySliceProvider {
     @Override
