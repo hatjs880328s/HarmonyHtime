@@ -35,8 +35,8 @@ public class RootTabBarSlicePresenter {
         String find = mAbilitySliceProvider.getString(ResourceTable.String_tabbar_application);
         String profile = mAbilitySliceProvider.getString(ResourceTable.String_tabbar_mine);
 
-        int defaultColor = mAbilitySliceProvider.getColor(ResourceTable.Color_default_color);
-        int tintColor = mAbilitySliceProvider.getColor(ResourceTable.Color_tint_color);
+        int defaultColor = mAbilitySliceProvider.getColor(ResourceTable.Color_subTitle_color);
+        int tintColor = mAbilitySliceProvider.getColor(ResourceTable.Color_theme_color);
         // 首页
         TabbarItemInfo<Integer> homeInfo = new TabbarItemInfo<>(home,
                 ResourceTable.Media_home_normal,

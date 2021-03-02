@@ -1,12 +1,16 @@
 {
   "color":[
     {
-      "name":"default_color",
-      "value":"#ff656667"
+      "name": "theme_color",
+      "value": "#0F7BCA"
     },
     {
-      "name":"tint_color",
-      "value":"#ffd44949"
+      "name": "mainTxt_color",
+      "value": "#333333"
+    },
+    {
+      "name": "subTitle_color",
+      "value": "#B1B1B1"
     }
   ]
 }
