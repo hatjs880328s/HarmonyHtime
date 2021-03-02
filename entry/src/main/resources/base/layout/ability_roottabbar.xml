@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.inspur.uti.BottomTabbar
+<com.inspur.htime.uti.UI.bottomtabbar.BottomTabbar
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:id="$+id:bottom_navigation_bar"
@@ -7,10 +7,10 @@
     ohos:width="match_parent">
 
 
-    <com.inspur.uti.FractionBarComponent
+    <com.inspur.htime.uti.UI.bottomtabbar.FractionBarComponent
         ohos:height="match_parent"
         ohos:id="$+id:fraction_bar_component"
         ohos:width="match_parent"/>
 
 
-</com.inspur.uti.BottomTabbar>
+</com.inspur.htime.uti.UI.bottomtabbar.BottomTabbar>

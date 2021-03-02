@@ -37,7 +37,7 @@
       }
     ],
     "package": "com.inspur.htime",
-    "name": ".MyApplication",
+    "name": "com.inspur.htime.usl.main.MyApplication",
     "deviceType": [
       "phone"
     ],
@@ -60,7 +60,7 @@
         ],
         "orientation": "unspecified",
         "visible": true,
-        "name": "com.inspur.htime.MainAbility",
+        "name": "com.inspur.htime.usl.main.MainAbility",
         "icon": "$media:icon",
         "description": "page",
         "label": "Htime",
@@ -79,7 +79,7 @@
           }
         ],
         "orientation": "unspecified",
-        "name": "com.inspur.htime.Login",
+        "name": "com.inspur.htime.usl.main.Login",
         "icon": "$media:icon",
         "description": "page",
         "label": "entry",
@@ -88,7 +88,7 @@
       },
       {
         "orientation": "unspecified",
-        "name": "com.inspur.htime.Login",
+        "name": "com.inspur.htime.usl.main.Login",
         "icon": "$media:icon",
         "description": "loginpage",
         "label": "entry",
@@ -97,7 +97,7 @@
       },
       {
         "orientation": "unspecified",
-        "name": "com.inspur.roottabbar.Roottabbar",
+        "name": "com.inspur.htime.usl.roottabbar.Roottabbar",
         "icon": "$media:icon",
         "description": "tabbarpage",
         "label": "entry",
@@ -106,7 +106,7 @@
       },
       {
         "orientation": "unspecified",
-        "name": "com.inspur.roottabbar.BaseAbility",
+        "name": "com.inspur.htime.usl.roottabbar.BaseAbility",
         "icon": "$media:icon",
         "description": "$string:baseability_description",
         "label": "entry",
