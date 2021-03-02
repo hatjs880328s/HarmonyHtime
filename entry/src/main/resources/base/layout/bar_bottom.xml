@@ -19,6 +19,7 @@
         ohos:align_parent_bottom="1"
         ohos:height="match_content"
         ohos:text="首页"
+        ohos:text_color="#000"
         ohos:text_size="10vp"
         ohos:bottom_margin="5vp"
         ohos:width="match_content"

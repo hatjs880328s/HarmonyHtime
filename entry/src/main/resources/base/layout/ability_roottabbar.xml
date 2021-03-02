@@ -7,4 +7,10 @@
     ohos:width="match_parent">
 
 
+    <com.inspur.uti.FractionBarComponent
+        ohos:height="match_parent"
+        ohos:id="$+id:fraction_bar_component"
+        ohos:width="match_parent"/>
+
+
 </com.inspur.uti.BottomTabbar>

@@ -1,5 +1,7 @@
 package com.inspur.uti;
 
+import ohos.aafwk.ability.fraction.Fraction;
+
 public class TabbarItemInfo<Color> {
 
     public enum BarType {
@@ -34,6 +36,7 @@ public class TabbarItemInfo<Color> {
      */
     public String name;
     public BarType tabType;
+    public Class<? extends Fraction> fraction;
 
     public TabbarItemInfo(String name, int defaultImage, int selectedImage) {
         this.name = name;

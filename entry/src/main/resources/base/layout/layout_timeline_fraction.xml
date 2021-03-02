@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#aaa"
+    ohos:width="match_parent">
+
+    <Text
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:height="match_content"
+        ohos:id="$+id:fraction_text_halo"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="timeline_fraction_halo.world."
+        ohos:text_size="50"
+        ohos:width="match_content"
+        />
+
+</DirectionalLayout>

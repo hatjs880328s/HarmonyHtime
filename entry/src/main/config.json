@@ -103,6 +103,15 @@
         "label": "entry",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.inspur.roottabbar.BaseAbility",
+        "icon": "$media:icon",
+        "description": "$string:baseability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }

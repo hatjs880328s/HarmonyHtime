@@ -1,5 +1,6 @@
 package com.inspur.provider;
 
+import ohos.aafwk.ability.fraction.FractionManager;
 import ohos.agp.components.Component;
 import ohos.app.Context;
 import ohos.global.resource.ResourceManager;
@@ -43,4 +44,10 @@ public interface AbilitySliceProvider {
      * @return
      */
     Context getContext();
+
+    /**
+     *
+     * @return
+     */
+    FractionManager getFractionManager();
 }
